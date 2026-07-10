@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!--=== All Plugins CSS ===-->
+    <link href="assets/css/plugins.css" rel="stylesheet" />
+    <!--=== All Vendor CSS ===-->
+    <link href="assets/css/vendor.css" rel="stylesheet" />
+    <!--=== Main Style CSS ===-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Top-Rated Dental Clinic in Mumbai | Care 32 – Expert Dentists</title>
+    <meta
+      name="description"
+      content="Mumbai's most trusted dental clinic — advanced, painless dentistry across 5 locations: Bandra, Juhu, Prabhadevi, Oshiwara & Versova. Book today"
+    />
+    <link rel="canonical" href="index.htm" />
+  </head>
+<body>
+    <style>
+      /* ===== NEW RESPONSIVE HEADER ===== */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .header-inner {
+        max-width: 1320px;
+        margin: auto;
+        min-height: 82px;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+      }
+
+      .header-logo img {
+        display: block;
+        width: 170px;
+        height: auto;
+      }
+
+      .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .desktop-nav > a,
+      .dropdown-toggle {
+        padding: 12px 14px;
+        color: #111;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .desktop-nav > a:hover,
+      .dropdown-toggle:hover {
+        color: #1689b7;
+      }
+
+      .nav-dropdown {
+        position: relative;
+      }
+
+      .dropdown-menu-custom {
+        position: absolute;
+        top: calc(100% + 18px);
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+        width: 680px;
+        padding: 18px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.14);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.25s ease;
+      }
+
+      .nav-dropdown:hover .dropdown-menu-custom {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .mega-card {
+        display: block;
+        padding: 16px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #111;
+      }
+
+      .mega-card:hover {
+        background: #f2fbff;
+      }
+
+      .mega-card img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        padding: 9px;
+        border-radius: 50%;
+        background: #daf4ff;
+        margin-bottom: 10px;
+      }
+
+      .mega-card strong {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+
+      .mega-card span {
+        display: block;
+        color: #666;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .location-menu {
+        width: 260px;
+        grid-template-columns: 1fr;
+      }
+
+      .location-link {
+        display: block;
+        padding: 14px;
+        border-radius: 10px;
+        color: #111;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .location-link:hover {
+        background: #f2fbff;
+      }
+
+      .location-link span {
+        display: block;
+        margin-top: 5px;
+        color: #1689b7;
+        font-size: 13px;
+      }
+
+      .header-cta {
+        padding: 12px 20px !important;
+        border-radius: 30px;
+        background: #1689b7;
+        color: #fff !important;
+      }
+
+      .header-cta:hover {
+        background: #0e739d;
+      }
+
+      .mobile-actions,
+      .mobile-panel {
+        display: none;
+      }
+
+      /* ===== MOBILE ===== */
+      @media (max-width: 991px) {
+        .header-inner {
+          min-height: 70px;
+          padding: 0 14px;
+          gap: 10px;
+        }
+
+        .header-logo img {
+          width: 120px;
+        }
+
+        .desktop-nav {
+          display: none;
+        }
+
+        .mobile-actions {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-left: auto;
+        }
+
+        .mobile-phone {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: #111;
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+
+        .mobile-phone img {
+          width: 17px;
+          height: 17px;
+        }
+
+        .hamburger {
+          width: 42px;
+          height: 42px;
+          border: 0;
+          border-radius: 10px;
+          background: #f1f8fb;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          cursor: pointer;
+        }
+
+        .hamburger span {
+          width: 22px;
+          height: 2px;
+          background: #111;
+          transition: 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+
+        .mobile-panel {
+          display: block;
+          position: fixed;
+          top: 70px;
+          right: -100%;
+          width: min(88%, 360px);
+          height: calc(100vh - 70px);
+          padding: 18px;
+          background: #fff;
+          box-shadow: -10px 15px 35px rgba(0, 0, 0, 0.15);
+          overflow-y: auto;
+          transition: right 0.35s ease;
+        }
+
+        .mobile-panel.open {
+          right: 0;
+        }
+
+        .mobile-panel a,
+        .mobile-dropdown-btn {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 14px 10px;
+          border: 0;
+          border-bottom: 1px solid #eee;
+          background: transparent;
+          color: #111;
+          text-decoration: none;
+          text-align: left;
+          font-size: 15px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+        .mobile-submenu {
+          display: none;
+          padding-left: 12px;
+          background: #f8fcfe;
+          border-radius: 10px;
+        }
+
+        .mobile-submenu.open {
+          display: block;
+        }
+
+        .mobile-submenu a {
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .mobile-get-touch {
+          justify-content: center !important;
+          margin-top: 18px;
+          border: 0 !important;
+          border-radius: 30px;
+          background: #1689b7 !important;
+          color: #fff !important;
+        }
+      }
+
+      @media (max-width: 390px) {
+        .header-logo img {
+          width: 100px;
+        }
+
+        .mobile-phone {
+          font-size: 11px;
+        }
+
+        .hamburger {
+          width: 38px;
+          height: 38px;
+        }
+      }
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo">
+          <img src="assets/img/logo.png" alt="Dentheal Logo" />
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html">Home</a>
+
+          <div class="nav-dropdown">
+            <button class="dropdown-toggle" type="button">Company ▾</button>
+
+            <div class="dropdown-menu-custom">
+              <a href="about.html" class="mega-card">
+                <img src="assets/img/nav%20icon/about.webp" alt="" />
+                <strong>Our Story</strong>
+                <span
+                  >Learn about who we are, why we started and what we do at Dent
+                  Heal.</span
+                >
+              </a>
+
+              <a href="team.html" class="mega-card">
+                <img src="assets/img/nav%20icon/team.webp" alt="" />
+                <strong>Meet Our Team</strong>
+                <span
+                  >Get to know more about our team and their
+                  specializations.</span
+                >
+              </a>
+
+              <a href="careers.html" class="mega-card">
+                <img src="assets/img/nav%20icon/career.webp" alt="" />
+                <strong>Careers</strong>
+                <span
+                  >Find openings and opportunities to join us on our
+                  mission.</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <a href="about.html">Our Story</a>
+          <a href="team.html">Meet Our Team</a>
+          <a href="careers.html">Careers</a>
+          <a href="pricing.html">Blogs</a>
+
+          <div class="nav-dropdown">
+            <button class="dropdown-toggle" type="button">Locations ▾</button>
+            <div class="dropdown-menu-custom location-menu">
+              <a
+                class="location-link"
+                target="_blank"
+                href="https://maps.app.goo.gl/u26h4tnAbbYBtDWy8?g_st=iw"
+              >
+                Jogeshwari West
+                <span>+91 8779074038</span>
+              </a>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="header-cta"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+            style="color: #000 !important"
+          >
+            Get In Touch
+          </a>
+        </nav>
+
+        <div class="mobile-actions">
+          <a
+            href="tel:8779074038"
+            class="mobile-phone"
+            onclick="
+              console.log('contact number Event Fired');
+              if (typeof fbq === 'function') {
+                fbq('track', 'Contact');
+              }
+            "
+          >
+            <img src="assets/img/nav%20icon/phone-call.webp" alt="Phone" />
+            +91 8779074038
+          </a>
+
+          <button
+            class="hamburger"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-panel" id="mobilePanel">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="team.html">Meet Our Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="pricing.html">Blogs</a>
+
+        <button
+          class="mobile-dropdown-btn"
+          type="button"
+          data-target="companyMobile"
+        >
+          Company <span>+</span>
+        </button>
+        <div class="mobile-submenu" id="companyMobile">
+          <a href="about.html">Our Story</a>
+          <a href="team.html">Meet Our Team</a>
+          <a href="careers.html">Careers</a>
+        </div>
+
+        <button
+          class="mobile-dropdown-btn"
+          type="button"
+          data-target="locationMobile"
+        >
+          Locations <span>+</span>
+        </button>
+        <div class="mobile-submenu" id="locationMobile">
+          <a
+            target="_blank"
+            href="https://maps.app.goo.gl/u26h4tnAbbYBtDWy8?g_st=iw"
+          >
+            Jogeshwari West — +91 8779074038
+          </a>
+        </div>
+
+        <a
+          href="#"
+          class="mobile-get-touch"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
+          >Get In Touch</a
+        >
+      </div>
+    </header>
+</body>
+</html>
