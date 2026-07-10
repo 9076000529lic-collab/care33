@@ -1,0 +1,2288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!--=== All Plugins CSS ===-->
+    <link href="assets/css/plugins.css" rel="stylesheet" />
+    <!--=== All Vendor CSS ===-->
+    <link href="assets/css/vendor.css" rel="stylesheet" />
+    <!--=== Main Style CSS ===-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Top-Rated Dental Clinic in Mumbai | Care 32 – Expert Dentists</title>
+    <meta
+      name="description"
+      content="Mumbai's most trusted dental clinic — advanced, painless dentistry across 5 locations: Bandra, Juhu, Prabhadevi, Oshiwara & Versova. Book today"
+    />
+    <link rel="canonical" href="index.htm" />
+  </head>
+
+  <body>
+    <style>
+      /* ===== NEW RESPONSIVE HEADER ===== */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .header-inner {
+        max-width: 1320px;
+        margin: auto;
+        min-height: 82px;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+      }
+
+      .header-logo img {
+        display: block;
+        width: 170px;
+        height: auto;
+      }
+
+      .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .desktop-nav > a,
+      .dropdown-toggle {
+        padding: 12px 14px;
+        color: #111;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .desktop-nav > a:hover,
+      .dropdown-toggle:hover {
+        color: #1689b7;
+      }
+
+      .nav-dropdown {
+        position: relative;
+      }
+
+      .dropdown-menu-custom {
+        position: absolute;
+        top: calc(100% + 18px);
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+        width: 680px;
+        padding: 18px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.14);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.25s ease;
+      }
+
+      .nav-dropdown:hover .dropdown-menu-custom {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .mega-card {
+        display: block;
+        padding: 16px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #111;
+      }
+
+      .mega-card:hover {
+        background: #f2fbff;
+      }
+
+      .mega-card img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        padding: 9px;
+        border-radius: 50%;
+        background: #daf4ff;
+        margin-bottom: 10px;
+      }
+
+      .mega-card strong {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+
+      .mega-card span {
+        display: block;
+        color: #666;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .location-menu {
+        width: 260px;
+        grid-template-columns: 1fr;
+      }
+
+      .location-link {
+        display: block;
+        padding: 14px;
+        border-radius: 10px;
+        color: #111;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .location-link:hover {
+        background: #f2fbff;
+      }
+
+      .location-link span {
+        display: block;
+        margin-top: 5px;
+        color: #1689b7;
+        font-size: 13px;
+      }
+
+      .header-cta {
+        padding: 12px 20px !important;
+        border-radius: 30px;
+        background: #1689b7;
+        color: #fff !important;
+      }
+
+      .header-cta:hover {
+        background: #0e739d;
+      }
+
+      .mobile-actions,
+      .mobile-panel {
+        display: none;
+      }
+
+      /* ===== MOBILE ===== */
+      @media (max-width: 991px) {
+        .header-inner {
+          min-height: 70px;
+          padding: 0 14px;
+          gap: 10px;
+        }
+
+        .header-logo img {
+          width: 120px;
+        }
+
+        .desktop-nav {
+          display: none;
+        }
+
+        .mobile-actions {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-left: auto;
+        }
+
+        .mobile-phone {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: #111;
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+
+        .mobile-phone img {
+          width: 17px;
+          height: 17px;
+        }
+
+        .hamburger {
+          width: 42px;
+          height: 42px;
+          border: 0;
+          border-radius: 10px;
+          background: #f1f8fb;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          cursor: pointer;
+        }
+
+        .hamburger span {
+          width: 22px;
+          height: 2px;
+          background: #111;
+          transition: 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+
+        .mobile-panel {
+          display: block;
+          position: fixed;
+          top: 70px;
+          right: -100%;
+          width: min(88%, 360px);
+          height: calc(100vh - 70px);
+          padding: 18px;
+          background: #fff;
+          box-shadow: -10px 15px 35px rgba(0, 0, 0, 0.15);
+          overflow-y: auto;
+          transition: right 0.35s ease;
+        }
+
+        .mobile-panel.open {
+          right: 0;
+        }
+
+        .mobile-panel a,
+        .mobile-dropdown-btn {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 14px 10px;
+          border: 0;
+          border-bottom: 1px solid #eee;
+          background: transparent;
+          color: #111;
+          text-decoration: none;
+          text-align: left;
+          font-size: 15px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+        .mobile-submenu {
+          display: none;
+          padding-left: 12px;
+          background: #f8fcfe;
+          border-radius: 10px;
+        }
+
+        .mobile-submenu.open {
+          display: block;
+        }
+
+        .mobile-submenu a {
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .mobile-get-touch {
+          justify-content: center !important;
+          margin-top: 18px;
+          border: 0 !important;
+          border-radius: 30px;
+          background: #1689b7 !important;
+          color: #fff !important;
+        }
+      }
+
+      @media (max-width: 390px) {
+        .header-logo img {
+          width: 100px;
+        }
+
+        .mobile-phone {
+          font-size: 11px;
+        }
+
+        .hamburger {
+          width: 38px;
+          height: 38px;
+        }
+      }
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo">
+          <img src="assets/img/logo.png" alt="Dentheal Logo" />
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html">Home</a>
+
+          <div class="nav-dropdown">
+            <button class="dropdown-toggle" type="button">Company ▾</button>
+
+            <div class="dropdown-menu-custom">
+              <a href="about.html" class="mega-card">
+                <img src="assets/img/nav%20icon/about.webp" alt="" />
+                <strong>Our Story</strong>
+                <span
+                  >Learn about who we are, why we started and what we do at Dent
+                  Heal.</span
+                >
+              </a>
+
+              <a href="team.html" class="mega-card">
+                <img src="assets/img/nav%20icon/team.webp" alt="" />
+                <strong>Meet Our Team</strong>
+                <span
+                  >Get to know more about our team and their
+                  specializations.</span
+                >
+              </a>
+
+              <a href="careers.html" class="mega-card">
+                <img src="assets/img/nav%20icon/career.webp" alt="" />
+                <strong>Careers</strong>
+                <span
+                  >Find openings and opportunities to join us on our
+                  mission.</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <a href="about.html">Our Story</a>
+          <a href="team.html">Meet Our Team</a>
+          <a href="careers.html">Careers</a>
+          <a href="pricing.html">Blogs</a>
+
+          <div class="nav-dropdown">
+            <button class="dropdown-toggle" type="button">Locations ▾</button>
+            <div class="dropdown-menu-custom location-menu">
+              <a
+                class="location-link"
+                target="_blank"
+                href="https://maps.app.goo.gl/u26h4tnAbbYBtDWy8?g_st=iw"
+              >
+                Jogeshwari West
+                <span>+91 8779074038</span>
+              </a>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="header-cta"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+            style="color: #000 !important"
+          >
+            Get In Touch
+          </a>
+        </nav>
+
+        <div class="mobile-actions">
+          <a
+            href="tel:8779074038"
+            class="mobile-phone"
+            onclick="
+              console.log('contact number Event Fired');
+              if (typeof fbq === 'function') {
+                fbq('track', 'Contact');
+              }
+            "
+          >
+            <img src="assets/img/nav%20icon/phone-call.webp" alt="Phone" />
+            +91 8779074038
+          </a>
+
+          <button
+            class="hamburger"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-panel" id="mobilePanel">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="team.html">Meet Our Team</a>
+        <a href="careers.html">Careers</a>
+        <a href="pricing.html">Blogs</a>
+
+        <button
+          class="mobile-dropdown-btn"
+          type="button"
+          data-target="companyMobile"
+        >
+          Company <span>+</span>
+        </button>
+        <div class="mobile-submenu" id="companyMobile">
+          <a href="about.html">Our Story</a>
+          <a href="team.html">Meet Our Team</a>
+          <a href="careers.html">Careers</a>
+        </div>
+
+        <button
+          class="mobile-dropdown-btn"
+          type="button"
+          data-target="locationMobile"
+        >
+          Locations <span>+</span>
+        </button>
+        <div class="mobile-submenu" id="locationMobile">
+          <a
+            target="_blank"
+            href="https://maps.app.goo.gl/u26h4tnAbbYBtDWy8?g_st=iw"
+          >
+            Jogeshwari West — +91 8779074038
+          </a>
+        </div>
+
+        <a
+          href="#"
+          class="mobile-get-touch"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
+          >Get In Touch</a
+        >
+      </div>
+    </header>
+
+    <!-- Desktop Slider -->
+    <div class="video-container">
+      <!-- Overlay -->
+      <div class="video-overlay"></div>
+      <!-- Desktop Video -->
+      <video
+        autoplay
+        loop
+        muted
+        preload="none"
+        class="d-block w-100 hide-on-mobile lazy-video"
+        poster="assets/img/dentheal_video_banner.webp"
+      >
+        <source src="assets/img/home-page/desktop3.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-content hide-on-mobile">
+        <h2>
+          Dentistry that <br />
+          makes life better
+        </h2>
+
+        <a
+          href="#"
+          data-bs-toggle="modal"
+          data-bs-target="#appointmentModal"
+          class="mt-2"
+          role="button"
+          style="
+            color: #fff;
+            border-color: #5993ea;
+            border-radius: 5px;
+            background-color: #5993ea;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+          "
+        >
+          Book Now &nbsp;&nbsp;
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <!-- Overlay -->
+      <div class="video-overlay"></div>
+      <!-- Desktop Video -->
+
+      <!-- Mobile Video -->
+      <video
+        autoplay
+        loop
+        muted
+        preload="none"
+        playsinline
+        class="d-block w-100 show-on-mobile lazy-video"
+        poster="assets/img/dentheal_mobile_banner.webp"
+      >
+        <source src="assets/img/home-page/mobile3.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Text and Button -->
+      <div class="video-content show-on-mobile">
+        <h2>
+          Dentistry that <br />
+          makes life better
+        </h2>
+        <a
+          href="#"
+          data-bs-toggle="modal"
+          class="mt-2"
+          data-bs-target="#exampleModal2"
+          role="button"
+          aria-controls="exampleModal2"
+          style="
+            color: #fff;
+            border-color: #5993ea;
+            border-radius: 5px;
+            background-color: #5993ea;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 15px;
+            text-align: center;
+
+            text-decoration: none;
+          "
+          >Book Now &nbsp;&nbsp;<i class="fa fa-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <!--Progress-->
+    <section class="animated-headline-area pb-25">
+      <div class="headline-wrap style-one">
+        <span class="marquee-wrap">
+          <span class="marquee-inner">
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/h1.webp"
+                style="margin-top: 10px"
+                width="26"
+                height="26"
+                alt="Icon for smiles"
+              />
+              <div class="text-content">
+                <b class="mobile-font">25,000+</b>
+                <span
+                  >Happy smiles <br />
+                  delivered</span
+                >
+              </div>
+            </span>
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/h2.webp"
+                style="margin-top: 10px"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font">15+</b>
+                <span
+                  >Years of trusted <br />
+                  dental care</span
+                >
+              </div>
+            </span>
+            <!-- Add more marquee items as needed -->
+
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/h3.webp"
+                style="margin-top: 10px"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font">MDS</b>
+                <span>Team of doctors</span>
+              </div>
+            </span>
+
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/h4.webp"
+                style="margin-top: 10px"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font">3</b>
+                <span
+                  >State of the art <br />
+                  centres</span
+                >
+              </div>
+            </span>
+
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/google.webp"
+                style="margin-top: 5px; background: none !important"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font d-flex align-items-center"
+                  >4.9
+                  <img
+                    loading="lazy"
+                    class="mx-2"
+                    src="assets/img/nav%20icon/five-stars-rating-icon-png.webp"
+                    style="width: 20px !important"
+                /></b>
+                <span>From 1000+ reviews</span>
+              </div>
+            </span>
+
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/practo.webp"
+                style="margin-top: 5px; background: none !important"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font">800+</b>
+                <span>Patient stories</span>
+              </div>
+            </span>
+
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/h1.webp"
+                style="margin-top: 10px"
+                width="26"
+                height="26"
+                alt="Icon for smiles"
+              />
+              <div class="text-content">
+                <b class="mobile-font">25,000+</b>
+                <span
+                  >Happy smiles <br />
+                  delivered</span
+                >
+              </div>
+            </span>
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/h2.webp"
+                style="margin-top: 10px"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font">15+</b>
+                <span
+                  >Years of trusted <br />
+                  dental care</span
+                >
+              </div>
+            </span>
+            <!-- Add more marquee items as needed -->
+
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/h3.webp"
+                style="margin-top: 10px"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font">MDS</b>
+                <span>Team of doctors</span>
+              </div>
+            </span>
+
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/h4.webp"
+                style="margin-top: 10px"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font">3</b>
+                <span
+                  >State of the art <br />
+                  centres</span
+                >
+              </div>
+            </span>
+
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/google.webp"
+                style="margin-top: 5px; background: none !important"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font d-flex align-items-center"
+                  >4.9
+                  <img
+                    loading="lazy"
+                    class="mx-2"
+                    src="assets/img/nav%20icon/five-stars-rating-icon-png.webp"
+                    style="width: 20px !important"
+                /></b>
+                <span>From 1000+ reviews</span>
+              </div>
+            </span>
+
+            <span class="marquee-item">
+              <img
+                loading="lazy"
+                class="nav-icon"
+                src="assets/img/nav%20icon/practo.webp"
+                style="margin-top: 5px; background: none !important"
+                width="26"
+                height="26"
+                alt="Icon for years"
+              />
+              <div class="text-content">
+                <b class="mobile-font">800+</b>
+                <span>Patient stories</span>
+              </div>
+            </span>
+          </span>
+        </span>
+      </div>
+    </section>
+
+    <section
+      class="solution-section hide-on-mobile"
+      style="background-color: #f7f4f2"
+    >
+      <div class="left-content">
+        <div class="paragraph fade-in" id="para1">
+          <div class="blog-text" style="width: 50%">
+            <p
+              style="
+                text-transform: uppercase;
+                font-weight: 700;
+                text-align: left;
+                letter-spacing: 1.2px;
+              "
+            >
+              Our Promise To You
+            </p>
+            <h3 class="desktop-text">
+              To provide ethical,painless <br />
+              and high-quality dental care that improves <br />
+              oral health and <br />
+              confidence.
+            </h3>
+            <h3 class="mobile-text" style="text-align: left">
+              We are on a mission to change the way you think about going to the
+              dentist.
+            </h3>
+
+            <p style="text-align: left; width: 80%">
+              A Our mission is to provide ethical, painless, and high-quality
+              dental care through advanced technology, personalized treatment
+              plans, and a compassionate approach.
+            </p>
+          </div>
+          <div style="width: 50%">
+            <img
+              loading="lazy"
+              src="assets/img/approach.gif"
+              alt="Our Promise To You"
+            />
+          </div>
+        </div>
+
+        <div class="paragraph fade-in" id="para2">
+          <div class="blog-text" style="width: 50%">
+            <p
+              style="
+                text-transform: uppercase;
+                font-weight: 700;
+                text-align: left;
+                letter-spacing: 1.2px;
+              "
+            >
+              THIS IS WHAT WE DO
+            </p>
+
+            <h3 style="text-align: left">Advanced Dental CareEnhance</h3>
+
+            <p style="text-align: left; width: 80%">
+              At Care32, we provide comprehensive dental care using advanced
+              technology and personalized treatment plans. From preventive
+              check-ups and cosmetic dentistry to root canal therapy, dental
+              implants, orthodontics, and smile makeovers, our experienced team
+              is committed to delivering comfortable, painless, and high-quality
+              care that helps every patient achieve a healthy, confident smile.
+            </p>
+          </div>
+
+          <div style="width: 50%">
+            <img
+              loading="lazy"
+              src="assets/img/asset1.webp"
+              alt="Advanced Dental Care"
+            />
+          </div>
+        </div>
+
+        <div class="paragraph fade-in" id="para3">
+          <div class="blog-text" style="width: 50%">
+            <h3 style="text-align: left">Smile Enhancement</h3>
+
+            <p style="text-align: left; width: 80%">
+              At Care32, we believe every smile is unique. Our cosmetic dental
+              treatments are designed to improve the appearance, function, and
+              confidence of your smile using advanced technology and
+              personalized care. Whether you want a brighter smile, better
+              alignment, or a complete smile transformation, our experienced
+              dental team ensures natural-looking, long-lasting results in a
+              comfortable environment. Our smile enhancement services include:
+            </p>
+
+            <div class="welcome-feature mt-sm-32 mt-md-36" style="width: 100%">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="single-welcome-feature d-flex">
+                    <div class="feature-icon">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/Shield%20Done.webp"
+                        style="width: 20px !important"
+                        alt="Smile Makeover"
+                      />
+                    </div>
+                    <div class="feature-info">
+                      <p>Smile Makeover</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="single-welcome-feature d-flex">
+                    <div class="feature-icon">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/Shield%20Done.webp"
+                        style="width: 20px !important"
+                        alt="Dental Veneers"
+                      />
+                    </div>
+                    <div class="feature-info">
+                      <p>Dental Veneers</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="single-welcome-feature d-flex">
+                    <div class="feature-icon">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/Shield%20Done.webp"
+                        style="width: 20px !important"
+                        alt="Teeth Whitening"
+                      />
+                    </div>
+                    <div class="feature-info">
+                      <p>Teeth Whitening</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="single-welcome-feature d-flex">
+                    <div class="feature-icon">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/Shield%20Done.webp"
+                        style="width: 20px !important"
+                        alt="Clear Aligners"
+                      />
+                    </div>
+                    <div class="feature-info">
+                      <p>Clear Aligners</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="width: 50%">
+            <img
+              loading="lazy"
+              src="assets/img/asset2.webp"
+              alt="Smile Enhancement"
+            />
+          </div>
+        </div>
+
+        <div class="paragraph fade-in" id="para4">
+          <div class="blog-text" style="width: 50%">
+            <h3 style="text-align: left">Restore & Correct</h3>
+
+            <p style="text-align: left; width: 80%">
+              At Care32, we specialize in restoring the health, function, and
+              appearance of your smile through advanced restorative and
+              corrective dentistry. Using modern digital diagnostics, precision
+              treatment planning, and minimally invasive techniques, our
+              experienced dental team provides personalized solutions for
+              damaged, missing, or misaligned teeth. Our goal is to deliver
+              comfortable treatment, long-lasting results, and a naturally
+              beautiful smile that enhances your confidence and oral health.
+            </p>
+
+            <div class="welcome-feature mt-sm-32 mt-md-36" style="width: 100%">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="single-welcome-feature d-flex">
+                    <div class="feature-icon">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/Shield%20Done.webp"
+                        style="width: 20px !important"
+                        alt="Dental Implants"
+                      />
+                    </div>
+                    <div class="feature-info">
+                      <p>Dental Implants</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="single-welcome-feature d-flex">
+                    <div class="feature-icon">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/Shield%20Done.webp"
+                        style="width: 20px !important"
+                        alt="Root Canal Treatment"
+                      />
+                    </div>
+                    <div class="feature-info">
+                      <p>Root Canal Treatment</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="single-welcome-feature d-flex">
+                    <div class="feature-icon">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/Shield%20Done.webp"
+                        style="width: 20px !important"
+                        alt="Dental Crowns & Bridges"
+                      />
+                    </div>
+                    <div class="feature-info">
+                      <p>Dental Crowns & Bridges</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="single-welcome-feature d-flex">
+                    <div class="feature-icon">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/Shield%20Done.webp"
+                        style="width: 20px !important"
+                        alt="Full Mouth Rehabilitation"
+                      />
+                    </div>
+                    <div class="feature-info">
+                      <p>Full Mouth Rehabilitation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="width: 50%">
+            <img
+              loading="lazy"
+              src="assets/img/asset3.webp"
+              alt="Restore & Correct"
+            />
+          </div>
+        </div>
+
+        <div class="paragraph fade-in" id="para5">
+          <div class="blog-text" style="width: 50%">
+            <h3 style="text-align: left">Prevent & Protect</h3>
+
+            <p style="text-align: left; width: 80%">
+              <b>"Prevention is the foundation of a healthy smile."</b> At
+              Care32, we believe that regular preventive dental care is the key
+              to maintaining excellent oral health for life. Our experienced
+              dentists focus on early diagnosis, professional cleanings,
+              preventive treatments, and personalized oral hygiene guidance to
+              help prevent cavities, gum disease, and other dental concerns.
+              Through routine check-ups and patient education, we help you
+              protect your smile and reduce the need for complex treatments in
+              the future.
+            </p>
+          </div>
+
+          <div style="width: 50%">
+            <img
+              loading="lazy"
+              src="assets/img/asset4.webp"
+              alt="Prevent & Protect"
+            />
+          </div>
+        </div>
+        <div class="paragraph fade-in" id="para6">
+          <div class="blog-text" style="width: 50%">
+            <h3 style="text-align: left">After Care & Support</h3>
+
+            <p style="text-align: left; width: 80%">
+              At Care32, your dental care doesn't end when your treatment is
+              complete. We are committed to providing comprehensive aftercare
+              through scheduled follow-up visits, personalized recovery
+              guidance, and ongoing oral health support. Our team closely
+              monitors your healing process, answers your questions, and offers
+              preventive care recommendations to ensure long-lasting results,
+              optimal comfort, and a healthy, confident smile for years to come.
+            </p>
+          </div>
+
+          <div style="width: 50%">
+            <img
+              loading="lazy"
+              src="assets/img/asset5.webp"
+              alt="After Care & Support"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- this part of start here that  -->
+
+    <!-- this is end of part ofthat here that -->
+
+    <section class="blog-section show-on-mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="blog-slider">
+              <div class="blog-post d-flex">
+                <div class="blog-image pb-20">
+                  <img
+                    loading="lazy"
+                    src="assets/img/approach.gif"
+                    alt="Our Promise To You"
+                  />
+                </div>
+                <div class="blog-text">
+                  <p
+                    class="fs-13"
+                    style="
+                      text-transform: uppercase;
+                      font-weight: 700;
+                      text-align: left;
+                    "
+                  >
+                    Our Promise To You
+                  </p>
+
+                  <h3 class="desktop-text">
+                    We are on a mission to <br />
+                    change the way you think <br />
+                    about going to the <br />
+                    dentist.
+                  </h3>
+                  <h3 class="mobile-text" style="text-align: left">
+                    We are on a mission to change the way you think about going
+                    to the dentist.
+                  </h3>
+
+                  <p style="text-align: left">
+                    A welcoming environment, a friendly team, and a personalized
+                    experience. At our practice, we prioritize your comfort and
+                    well-being while delivering exceptional Care 32with
+                    expertise and compassion.
+                  </p>
+                </div>
+              </div>
+
+              <div class="blog-post d-flex">
+                <div class="blog-image pb-20">
+                  <img
+                    loading="lazy"
+                    src="assets/img/asset1.webp"
+                    alt="Pain Management"
+                  />
+                </div>
+                <div class="blog-text">
+                  <p
+                    class="fs-13"
+                    style="
+                      text-transform: uppercase;
+                      font-weight: 700;
+                      text-align: left;
+                    "
+                  >
+                    THIS IS WHAT WE DO
+                  </p>
+                  <h3 style="text-align: left">Pain Management</h3>
+                  <p style="text-align: left">
+                    Whether it’s addressing a rootcanal, extracting a wisdom
+                    tooth, or managing any other dental emergency, our goal is
+                    to alleviate pain promptly while ensuring our patients feel
+                    supported and informed throughout their treatment journey.
+                  </p>
+                </div>
+              </div>
+
+              <div class="blog-post d-flex">
+                <div class="blog-image pb-20">
+                  <img
+                    loading="lazy"
+                    src="assets/img/asset2.webp"
+                    alt="Enhance"
+                  />
+                </div>
+                <div class="blog-text">
+                  <h3 style="text-align: left">Enhance</h3>
+                  <p style="text-align: left">
+                    ‘Natural looking’ and ‘Long lasting’ are some of the
+                    adjectives we like to associate with when it comes to
+                    enhancing a patients teeth and gums. Our approach emphasizes
+                    personalized treatment plans and the use of advanced tech to
+                    tailor solutions to each individual’s specific needs. Our
+                    team works closely with the patient throughout the entire
+                    process so as to provide a result that exceeds expectations.
+                    At our clinics, we offer a range of enhancement procedures
+                    that include:
+                  </p>
+                  <div class="welcome-feature mt-sm-32 mt-md-36">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div
+                          class="single-welcome-feature d-flex align-items-center"
+                        >
+                          <div class="feature-icon">
+                            <img
+                              loading="lazy"
+                              src="assets/img/nav%20icon/Shield%20Done.webp"
+                              style="width: 20px !important"
+                            />
+                          </div>
+                          <div class="feature-info">
+                            <p>Smile Makeover</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div
+                          class="single-welcome-feature d-flex align-items-center"
+                        >
+                          <div class="feature-icon">
+                            <img
+                              loading="lazy"
+                              src="assets/img/nav%20icon/Shield%20Done.webp"
+                              style="width: 20px !important"
+                            />
+                          </div>
+                          <div class="feature-info">
+                            <p>Teeth Whitening</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div
+                          class="single-welcome-feature d-flex align-items-center"
+                        >
+                          <div class="feature-icon">
+                            <img
+                              loading="lazy"
+                              src="assets/img/nav%20icon/Shield%20Done.webp"
+                              style="width: 20px !important"
+                            />
+                          </div>
+                          <div class="feature-info">
+                            <p>Gum Depigmentation</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-post d-flex">
+                <div class="blog-image pb-20">
+                  <img
+                    loading="lazy"
+                    src="assets/img/asset3.webp"
+                    alt="Correct"
+                  />
+                </div>
+                <div class="blog-text">
+                  <h3 style="text-align: left">Correct</h3>
+                  <p style="text-align: left">
+                    At Dent Heal, we excel in the art and science of corrective
+                    dentistry. We use precise digital mapping, planning tools
+                    and custom-fit technology to effectively correct misaligned
+                    teeth or replace missing teeth with optimal comfort and
+                    bio-mimicry. Our implants are meticulously placed using
+                    advanced imaging and surgical techniques, ensuring a perfect
+                    fit and natural integration with your existing teeth for
+                    seamless functionality and appearance.
+                  </p>
+                  <div class="welcome-feature mt-sm-32 mt-md-36">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div
+                          class="single-welcome-feature d-flex align-items-center"
+                        >
+                          <div class="feature-icon">
+                            <img
+                              loading="lazy"
+                              src="assets/img/nav%20icon/Shield%20Done.webp"
+                              style="width: 20px !important"
+                            />
+                          </div>
+                          <div class="feature-info">
+                            <p>Clear Aligners</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div
+                          class="single-welcome-feature d-flex align-items-center"
+                        >
+                          <div class="feature-icon">
+                            <img
+                              loading="lazy"
+                              src="assets/img/nav%20icon/Shield%20Done.webp"
+                              style="width: 20px !important"
+                            />
+                          </div>
+                          <div class="feature-info">
+                            <p>Full Mouth Rehabilitation</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div
+                          class="single-welcome-feature d-flex align-items-center"
+                        >
+                          <div class="feature-icon">
+                            <img
+                              loading="lazy"
+                              src="assets/img/nav%20icon/Shield%20Done.webp"
+                              style="width: 20px !important"
+                            />
+                          </div>
+                          <div class="feature-info">
+                            <p>Dental Implants</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div
+                          class="single-welcome-feature d-flex align-items-center"
+                        >
+                          <div class="feature-icon">
+                            <img
+                              loading="lazy"
+                              src="assets/img/nav%20icon/Shield%20Done.webp"
+                              style="width: 20px !important"
+                            />
+                          </div>
+                          <div class="feature-info">
+                            <p>Gum Correction</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-post d-flex">
+                <div class="blog-image pb-20">
+                  <img
+                    loading="lazy"
+                    src="assets/img/asset4.webp"
+                    alt="Prevent"
+                  />
+                </div>
+                <div class="blog-text">
+                  <h3 style="text-align: left">Prevent</h3>
+                  <p style="text-align: left">
+                    <b>“An ounce of prevention is worth a pound of cure.”</b>
+                    We believe that preventive care is essential for maintaining
+                    optimum oral health. We focus on providing optimum
+                    preventive solutions like Fluoride Treatments, Dental
+                    Sealants and Hygiene and Nutritional counseling to
+                    strengthen teeth and prevent decay. Along with free regular
+                    check ups and x-rays for our members, our goal is to empower
+                    patients to take control of their oral health and avoid any
+                    major future dental problems.
+                  </p>
+                </div>
+              </div>
+
+              <div class="blog-post d-flex">
+                <div class="blog-image pb-20">
+                  <img
+                    loading="lazy"
+                    src="assets/img/asset5.webp"
+                    alt="After Care"
+                  />
+                </div>
+                <div class="blog-text">
+                  <h3 style="text-align: left">After Care</h3>
+                  <p style="text-align: left">
+                    Follow-ups and post treatment care is an essential part of
+                    dentistry. At Care 32, we give utmost importance to how our
+                    patients are taken care of post their procedures, with
+                    scheduled follow up appointments and timely reminders to
+                    keep up and maintain the work done.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Our Approach-->
+    <section class="pt-40 pb-60" style="background-color: #f7f4f2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 m-auto text-center">
+            <div
+              class="section-title-wrap text-center text-md-left"
+              style="margin: 17px"
+            >
+              <p
+                style="text-transform: uppercase; font-size: 16px"
+                class="title-text"
+              >
+                Our Approach
+              </p>
+              <h2 class="title-heading">The proof is in the results</h2>
+              <p class="title-description mb-0">
+                Advantages of a minimally invasive and preventive approach to
+                techniques.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center" style="margin: 17px">
+          <div class="col-lg-6 order-1 order-lg-1 my-auto">
+            <img
+              loading="lazy"
+              src="assets/img/home-page/video-bg.webp"
+              style="border-radius: 20px"
+              alt="The proof is in the results"
+            />
+          </div>
+          <div class="col-lg-6 order-2 order-lg-2">
+            <div class="welcome-feature mt-sm-32 mt-md-36">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="single-desc-item-wrap1">
+                    <div class="d-flex text-container">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/ph_arrow-down-light.webp"
+                        width="35px"
+                        alt="arrow-down"
+                      />
+                      <h3 class="mb-0">64%</h3>
+                    </div>
+                    <p class="desktop-text mb-0">
+                      Prevention of root canal treatment
+                    </p>
+                    <p class="mobile-text mb-0">
+                      Prevention of root canal treatment
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-desc-item-wrap1">
+                    <div class="d-flex text-container">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/ph_arrow-down-light.webp"
+                        width="35px"
+                        alt="arrow-down"
+                      />
+                      <h3 class="mb-0">45%</h3>
+                    </div>
+                    <p class="desktop-text mb-0">
+                      Reduction in surgical extractions
+                    </p>
+                    <p class="mobile-text mb-0">
+                      Reduction in surgical extractions
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-desc-item-wrap1">
+                    <div class="d-flex text-container">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/ph_arrow-down-light.webp"
+                        width="35px"
+                        alt="arrow-down"
+                      />
+                      <h3 class="mb-0">30%</h3>
+                    </div>
+                    <p class="desktop-text mb-0">Reduction in treatment cost</p>
+                    <p class="mobile-text mb-0">Reduction in treatment cost</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-desc-item-wrap1">
+                    <div class="d-flex text-container">
+                      <img
+                        loading="lazy"
+                        src="assets/img/nav%20icon/ph_arrow-down-light.webp"
+                        width="35px"
+                        alt="arrow-down"
+                      />
+                      <h3 class="mb-0">61%</h3>
+                    </div>
+                    <p class="desktop-text mb-0">Reduction in on-chair time</p>
+                    <p class="mobile-text mb-0">Reduction in on-chair time</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: #f7f4f2" class="pt-40 pb-40">
+      <div class="call-out-elem-1">
+        <div class="container bg-brand pb-40">
+          <div class="row">
+            <div class="col-lg-12 m-auto text-center">
+              <div>
+                <p
+                  style="
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    letter-spacing: 1.2px;
+                  "
+                  class="pt-40"
+                >
+                  Pricing
+                </p>
+                <h2 class="mb-10">Clear and Affordable</h2>
+                <p class="mb-20 fs-14" style="font-weight: 500">
+                  We believe in high quality dentistry for all, hence our
+                  treatments are priced to be affordable and <br />
+                  accessible.
+                </p>
+                <a href="pricing.html"
+                  ><b>Know More</b> <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-schedule-wrapper pt-40">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 m-auto text-center">
+            <div class="section-title-wrap">
+              <p
+                class="desktop-text"
+                style="
+                  text-transform: uppercase;
+                  font-weight: 700;
+                  letter-spacing: 1.2px;
+                "
+              >
+                WE PROVIDE
+              </p>
+              <p
+                class="mobile-text"
+                style="
+                  text-transform: uppercase;
+                  font-weight: 700;
+                  letter-spacing: 1.2px;
+                  padding-left: 20px;
+                "
+              >
+                WE PROVIDE
+              </p>
+              <h2 class="desktop-text">
+                The most clinically rigorous team + the most <br />
+                powerful tech
+              </h2>
+              <h2
+                class="mobile-text"
+                style="
+                  padding-left: 20px;
+                  padding-bottom: 10px;
+                  font-size: 22px;
+                "
+              >
+                The most clinically rigorous <br />
+                team + the most powerful <br />
+                tech
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="event-schedule-tab-wrap">
+              <div class="event-schedule-day-menu">
+                <ul class="nav" id="eventSchedule">
+                  <li>
+                    <a
+                      class="active"
+                      data-bs-toggle="tab"
+                      href="#day_01_content"
+                      >Advanced Clinics</a
+                    >
+                  </li>
+                  <li>
+                    <a data-bs-toggle="tab" href="#day_02_content"
+                      >Technology</a
+                    >
+                  </li>
+                  <li>
+                    <a data-bs-toggle="tab" href="#day_03_content"
+                      >Patient First-approach</a
+                    >
+                  </li>
+                  <li>
+                    <a data-bs-toggle="tab" href="#day_04_content"
+                      >Customised Solutions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="event-schedule-content-wrapper">
+                <div class="tab-content" id="eventScheduleContent">
+                  <div class="tab-pane fade show active" id="day_01_content">
+                    <div class="event-schedule-content-inner">
+                      <div class="event-schedule-item-content">
+                        <div
+                          class="row d-flex align-items-center justify-content-center"
+                        >
+                          <div class="col-md-6">
+                            <img
+                              loading="lazy"
+                              src="assets/img/t1.png"
+                              alt="Advanced Clinics"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <div class="event-topic-details">
+                              <h3 class="mt-10">Advanced Clinics</h3>
+                              <p>
+                                At <strong>Care 32</strong>, our modern dental
+                                clinics are equipped with advanced technology
+                                and state-of-the-art equipment to deliver
+                                precise, comfortable, and efficient dental care.
+                                Our experienced team follows international
+                                sterilization standards and personalized
+                                treatment protocols to ensure every patient
+                                receives the highest quality of care. From
+                                routine dental check-ups to advanced cosmetic
+                                and restorative procedures, we focus on creating
+                                a safe, relaxing, and patient-friendly
+                                environment where your comfort and oral health
+                                are always our top priorities.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="day_02_content">
+                    <div class="event-schedule-content-inner">
+                      <div class="event-schedule-item-content">
+                        <div
+                          class="row d-flex align-items-center justify-content-center"
+                        >
+                          <div class="col-md-6">
+                            <img
+                              loading="lazy"
+                              src="assets/img/t2.png"
+                              alt="Technology"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <div class="event-topic-details">
+                              <h3 class="mt-10">Technology</h3>
+                              <p>
+                                At <strong>Care 32</strong>, we combine advanced
+                                dental technology with expert care to deliver
+                                precise, safe, and comfortable treatments. Our
+                                clinic is equipped with modern diagnostic tools,
+                                digital imaging, and innovative treatment
+                                techniques that improve accuracy while reducing
+                                treatment time. By embracing the latest
+                                advancements in dentistry, we provide
+                                personalized solutions that ensure better
+                                results, faster recovery, and a seamless
+                                experience for every patient. At Care 32,
+                                technology helps us create healthier smiles with
+                                confidence and care.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="day_03_content">
+                    <div class="event-schedule-item-content">
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col-md-6">
+                          <img
+                            loading="lazy"
+                            src="assets/img/t3.png"
+                            alt="Patient first-approach"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <div class="event-topic-details">
+                            <h3 class="mt-10">Patient-First Approach</h3>
+                            <p>
+                              At <strong>Care 32</strong>, every patient is our
+                              highest priority. We believe that exceptional
+                              dental care begins with understanding your unique
+                              needs and concerns. Our compassionate team takes
+                              the time to provide personalized treatment plans,
+                              clear communication, and a stress-free experience.
+                              From your first consultation to post-treatment
+                              care, we are committed to making every visit
+                              comfortable, painless, and focused on achieving
+                              the best possible results for your oral health and
+                              smile.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="day_04_content">
+                    <div class="event-schedule-item-content">
+                      <div
+                        class="row d-flex align-items-center justify-content-center"
+                      >
+                        <div class="col-md-6">
+                          <img
+                            loading="lazy"
+                            src="assets/img/t4.png"
+                            alt="customised solutions"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <div class="event-topic-details">
+                            <h3 class="mt-10">Customized Solutions</h3>
+                            <p>
+                              At <strong>Care 32</strong>, we understand that
+                              every patient has unique dental needs and smile
+                              goals. That's why we create personalized treatment
+                              plans tailored to your oral health, lifestyle, and
+                              expectations. Whether you need preventive care,
+                              cosmetic dentistry, orthodontics, or full smile
+                              rehabilitation, our experienced team provides
+                              customized solutions designed to deliver
+                              long-lasting results, improved function, and a
+                              confident, healthy smile.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Our Team-->
+    <section class>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 m-auto text-center">
+            <div class>
+              <h2 class="mb-20">Meet Our Doctors</h2>
+
+              <p class="text-center desktop-text">
+                At <strong>Care 32</strong>, our team of experienced dentists is
+                dedicated to providing exceptional dental care with compassion,
+                precision, and professionalism. Every doctor combines advanced
+                clinical expertise with the latest dental technology to deliver
+                personalized treatment plans tailored to your unique needs.
+                Whether it's preventive, restorative, cosmetic, or specialized
+                dental care, our focus is on ensuring your comfort, building
+                lasting trust, and helping you achieve a healthy, confident
+                smile. We believe every patient deserves quality care in a
+                welcoming environment where your oral health always comes first.
+              </p>
+
+              <p class="text-center mobile-text fs-14">
+                At <strong>Care 32</strong>, our team of experienced dentists is
+                dedicated to providing exceptional dental care with compassion,
+                precision, and professionalism. Every doctor combines advanced
+                clinical expertise with the latest dental technology to deliver
+                personalized treatment plans tailored to your unique needs.
+                Whether it's preventive, restorative, cosmetic, or specialized
+                dental care, our focus is on ensuring your comfort, building
+                lasting trust, and helping you achieve a healthy, confident
+                smile. We believe every patient deserves quality care in a
+                welcoming environment where your oral health always comes first.
+              </p>
+            </div>
+
+            <img
+              loading="lazy"
+              src="assets/img/TEAM%20PHOTO.webp"
+              alt="Meet our doctors"
+            />
+
+            <a href="team.html" class="btn btn-event ms-auto mt-20"
+              >Know more <i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 m-auto text-center">
+            <div>
+              <h1 class="mb-20 new-doct-head">
+                Best Dental Clinic for Advanced & Personalized Dental Care
+              </h1>
+
+              <p class="text-center desktop-text">
+                At <strong>Care 32</strong>, we are committed to delivering
+                world-class dental care through experienced professionals,
+                advanced technology, and a patient-first approach. From
+                preventive and restorative dentistry to cosmetic smile makeovers
+                and dental implants, we offer comprehensive treatments tailored
+                to your individual needs. Our goal is to provide comfortable,
+                safe, and effective dental solutions that help you achieve a
+                healthy, beautiful smile and long-term oral wellness.
+              </p>
+
+              <p class="text-center mobile-text fs-14">
+                At <strong>Care 32</strong>, we are committed to delivering
+                world-class dental care through experienced professionals,
+                advanced technology, and a patient-first approach. From
+                preventive and restorative dentistry to cosmetic smile makeovers
+                and dental implants, we offer comprehensive treatments tailored
+                to your individual needs. Our goal is to provide comfortable,
+                safe, and effective dental solutions that help you achieve a
+                healthy, beautiful smile and long-term oral wellness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid">
+      <p
+        class="mt-60 fs-13"
+        style="
+          text-transform: uppercase;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 1.2px;
+        "
+      >
+        Featured in
+      </p>
+
+      <div class="headline-wrap style-one" style="background: none !important">
+        <span class="marquee-wrap" style="background: none !important">
+          <span class="marquee-inner">
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/1.webp"
+                alt="Brand Logo"
+              />
+            </span>
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/2.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/3.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/4.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/5.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/8.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/9.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/1.webp"
+                alt="Brand Logo"
+              />
+            </span>
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/2.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/3.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/4.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/5.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/8.webp"
+                alt="Brand Logo"
+              />
+            </span>
+
+            <span class="marquee-item" style="width: 200px !important">
+              <img
+                loading="lazy"
+                class="w-100"
+                src="assets/img/home-page/brand/9.webp"
+                alt="Brand Logo"
+              />
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <!--Book Appointment-->
+    <section>
+      <div class="call-out-elem-1 pt-40 pt-sm-56 pb-40 pb-sm-60">
+        <div class="container pb-40">
+          <div class="row">
+            <!-- Start Section title -->
+            <div class="col-lg-12 m-auto text-center">
+              <div class>
+                <h3 class="mb-20">
+                  Ready To <span style="color: #5993ea"> Schedule </span> An
+                  Appointment?
+                </h3>
+                <p class="mb-20 desktop-text" style="font-weight: 400">
+                  Book your in-person or online consultation today.
+                </p>
+
+                <p class="mb-20 fs-14 mobile-text" style="font-weight: 600">
+                  Book your in-person or online consultation today.
+                </p>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#appointmentModal"
+                  class="mt-2"
+                  role="button"
+                  style="
+                    color: #fff;
+                    border-color: #5993ea;
+                    border-radius: 5px;
+                    background-color: #5993ea;
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding: 15px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                  "
+                >
+                  Book an appointment &nbsp;&nbsp;
+                  <i class="fa fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Section title -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="call-out-elem-2 pt-40 pb-40" style="background-color: #f7f4f2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center text-lg-start">
+            <!-- Start Call to action Content -->
+            <div
+              class="call-to-action-content d-lg-flex justify-content-between align-items-center"
+            >
+              <div class="call-to-action-left">
+                <h3 class="text-black desktop-text">Visit Care 32. DO GOOD.</h3>
+                <h3 class="text-black mobile-text">
+                  Visit Care 32. <br />
+                  DO GOOD.
+                </h3>
+                <p class="mt-20 fs-14">
+                  When you get treated by us, you help fund access to dental
+                  health for the underprivileged. <br />
+                  <b>
+                    <span style="letter-spacing: 1.2px"
+                      >1,678 patients treated!</span
+                    ></b
+                  >
+                </p>
+              </div>
+              <div class="call-to-action-right mt-md-30 mt-sm-30">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#appointmentModal"
+                  class="mt-2"
+                  role="button"
+                  style="
+                    color: #fff;
+                    border-color: #5993ea;
+                    border-radius: 5px;
+                    background-color: #5993ea;
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding: 15px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                  "
+                >
+                  Book an appointment &nbsp;&nbsp;
+                  <i class="fa fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Call to action Content -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Call Out Element #02 -->
+
+    <!--== Start Footer Area Wrapper ==-->
+
+    <footer class="footer-wrapper">
+      <!-- Start Footer Widget Area -->
+      <div class="footer-widget-wrapper pt-40">
+        <hr />
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Start Single Widget Wrap -->
+            <div class="col-lg-3 col-md-6 justify-content-center">
+              <div class="single-widget-wrap">
+                <img
+                  loading="lazy"
+                  src="assets/img/logo.png"
+                  class="mobile-footer"
+                  width="120"
+                />
+                <div class="widget-body">
+                  <div class="footer-social-icons nav mt-40">
+                    <a href="#" target="_blank" class="nav-icon1">
+                      <i class="fa-brands fa-facebook"></i
+                    ></a>
+
+                    <a href="#" target="_blank" class="nav-icon1">
+                      <i class="fa-brands fa-instagram"></i
+                    ></a>
+
+                    <a href="#" target="_blank" class="nav-icon1">
+                      <i class="fa-brands fa-linkedin"></i
+                    ></a>
+
+                    <a href="#" target="_blank" class="nav-icon1">
+                      <i class="fa-brands fa-x-twitter"></i
+                    ></a>
+
+                    <a href="#" target="_blank" class="nav-icon1">
+                      <i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </div>
+                  <p class="mt-20 mobile-footer text-center">
+                    &copy; <span id="current-year"></span> Live In Computer Med.
+                    Made with <span class="love-icon">❤️</span>
+                    <br />
+                    All Rights Reserved.
+                  </p>
+
+                  <script>
+                    document.getElementById("current-year").textContent =
+                      new Date().getFullYear();
+                  </script>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Widget Wrap -->
+            <!-- Start Single Widget Wrap -->
+            <div class="col-lg-3 col-6 col-md-6 mobile-align">
+              <div class="single-widget-wrap">
+                <p class="text-black mb-0">Monday - Saturday</p>
+                <p class="text-black pb-30">10:00 am - 9:00 pm</p>
+
+                <p class="text-black mb-0">Sunday</p>
+                <p class="text-black pb-30">By Appointment</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 col-md-6">
+              <div class="single-widget-wrap">
+                <div class="widget-body">
+                  <ul class="widget-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Solutions</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="results.html">Results</a></li>
+                    <li><a href="pricing.html">Our Pricing</a></li>
+                    <li><a href="careers.html">Join The Team</a></li>
+                    <li><a href="pricing.html">Blogs</a></li>
+                    <li>
+                      <a href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 col-md-6">
+              <div class="single-widget-wrap" style="border: none !important">
+                <a href="https://wa.me/918779074038" target="_blank">
+                  <p class="text-black pb-20">Say hello to us</p>
+                </a>
+
+                <p class="text-black mb-0">Email</p>
+                <p class="text-black pb-20">Care32dentalmumbai@gmail.com</p>
+                <div class="widget-body">
+                  <p class="text-black pb-10">Locations</p>
+                  <ul class="location-list">
+                    <li>
+                      <div style="display: flex; align-items: center; gap: 8px">
+                        <a
+                          target="_blank"
+                          href="https://maps.app.goo.gl/u26h4tnAbbYBtDWy8?g_st=iw"
+                        >
+                          <img
+                            loading="lazy"
+                            src="assets/img/nav%20icon/location.webp"
+                            width="18"
+                            alt="Location Icon"
+                          />
+                          <u>Jogeshwari West</u>
+                        </a>
+
+                        <a href="tel:8779074038"> +91 8779074038 </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="mt-20 desktop-footer text-center">
+                ©
+                <script>
+                  document.write(new Date().getFullYear() + " ");
+                </script>
+                Dentheal <br />
+                All Rights Reserved
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="tel:8779074038"
+            class="float1"
+            style="text-decoration: none; color: #000; font-size: 12px"
+            onclick="
+              console.log('contact number Event Fired');
+              fbq('track', 'Contact');
+            "
+          >
+            <img loading="lazy" src="assets/img/nav%20icon/phone-call.webp" />
+          </a>
+
+          <a
+            href="https://wa.me/918779074038?text=Hi%20I%20am%20interested%20in%20booking%20an%20appointment"
+            class="float"
+            target="_blank"
+            onclick="
+              console.log('Contact Event Fired');
+              fbq('track', 'Contact');
+            "
+          >
+            <img loading="lazy" src="assets/img/nav%20icon/whatsapp2.webp" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
